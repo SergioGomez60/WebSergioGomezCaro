@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 }
 
@@ -23,6 +22,7 @@ body{
 .enlaces{
     text-decoration: none;
     color: aliceblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /*background: linear-gradient(90deg, rgb(99, 42, 42) 0%, whitesmoke 25%, rgb(99, 42, 42) 50%, whitesmoke 75%, rgb(99, 42, 42) 100%);
     background-size: 200% 100%;
     -webkit-background-clip: text; 
@@ -31,13 +31,14 @@ body{
 }
 
 .enlaces:hover{
-    color: rgb(143, 65, 65);
+    color: rgb(170, 50, 50);
+    transition:0.5s;
 }
 
-/*@keyframes gradient-flow {
+@keyframes gradient-flow {
   0% { background-position: 0% 0; }
   100% { background-position: -200% 0; }
-}*/
+}
 
 .logo-nav{
     width: 50px;
@@ -48,4 +49,50 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+.div-logo{
+    display:flex;
+    align-items:center;
+    color:whitesmoke;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px ;
+}
+
+/******************MAIN****************/
+.texto-bienvenidos{
+    background: linear-gradient(90deg, rgb(170, 50, 50) 0%, whitesmoke 25%, rgb(170, 50, 50) 50%, whitesmoke 75%, rgb(170, 50, 50) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: gradient-flow 5s linear infinite; 
+    text-align: center;
+    font-size: 160px;
+}
+
+.texto-nombre{
+    /*color: whitesmoke;*/
+    text-align: center;
+    font-size: 50px;
+    background: linear-gradient(90deg, grey 0%, whitesmoke 25%, grey 50%, whitesmoke 75%, grey 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: gradient-flow 5s linear infinite;
+}
+
+.texto-programador{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 30px;
+}
+
+.seccion1{
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
