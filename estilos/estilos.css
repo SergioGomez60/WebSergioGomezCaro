@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+
+body{
+    background: -webkit-linear-gradient(90deg, #000000,#121212,#000000);
+    background: linear-gradient(90deg, #000000,#121212,#000000) ;
+}
+
+/***************NAV*******************/
+.navegador{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+    align-items: center;
+}
+
+.enlaces{
+    text-decoration: none;
+    color: aliceblue;
+    /*background: linear-gradient(90deg, rgb(99, 42, 42) 0%, whitesmoke 25%, rgb(99, 42, 42) 50%, whitesmoke 75%, rgb(99, 42, 42) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: gradient-flow 6s linear infinite; */
+}
+
+.enlaces:hover{
+    color: rgb(143, 65, 65);
+}
+
+/*@keyframes gradient-flow {
+  0% { background-position: 0% 0; }
+  100% { background-position: -200% 0; }
+}*/
+
+.logo-nav{
+    width: 50px;
+    height: 50px;
+}
+
+.div-enlaces{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
