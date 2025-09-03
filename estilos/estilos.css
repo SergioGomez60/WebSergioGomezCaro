@@ -5,6 +5,10 @@
     
 }
 
+html {
+      scroll-behavior: smooth;
+    }
+
 body{
     background: -webkit-linear-gradient(90deg, #000000,#121212,#000000);
     background: linear-gradient(90deg, #000000,#121212,#000000) ;
@@ -17,21 +21,19 @@ body{
     justify-content: space-around;
     padding: 20px;
     align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
 
 .enlaces{
     text-decoration: none;
     color: aliceblue;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /*background: linear-gradient(90deg, rgb(99, 42, 42) 0%, whitesmoke 25%, rgb(99, 42, 42) 50%, whitesmoke 75%, rgb(99, 42, 42) 100%);
-    background-size: 200% 100%;
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-    animation: gradient-flow 6s linear infinite; */
 }
 
 .enlaces:hover{
-    color: rgb(170, 50, 50);
+    color:rgb(128, 48, 48);
     transition:0.5s;
 }
 
@@ -63,7 +65,7 @@ body{
 
 /*****************SECCION1*************/
 .texto-bienvenidos{
-    background: linear-gradient(90deg, rgb(170, 50, 50) 0%, whitesmoke 25%, rgb(170, 50, 50) 50%, whitesmoke 75%, rgb(170, 50, 50) 100%);
+    background: linear-gradient(90deg, rgb(128, 48, 48) 0%, whitesmoke 25%, rgb(128, 48, 48) 50%, whitesmoke 75%, rgb(128, 48, 48) 100%);
     background-size: 200% 100%;
     -webkit-background-clip: text; 
     -webkit-text-fill-color: transparent; 
@@ -90,17 +92,78 @@ body{
 }
 
 .seccion1{
-    height: 90vh;              
+    height: 100vh;              
     display: flex;
     flex-direction:column;              
     justify-content: center;    
     align-items: center;
     gap:20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 /****************SECCION2***************/
-.h2-sobremi{
-    color:whitesmoke;
+.titulos-secciones{
+    background: linear-gradient(90deg, rgb(128, 48, 48) 0%, whitesmoke 25%, rgb(128, 48, 48) 50%, whitesmoke 75%, rgb(128, 48, 48) 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    animation: gradient-flow 5s linear infinite;
     text-align:center;
     font-size:60px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.texto-sobremi{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px;
+    max-width: 35%;           
+    margin: 0 auto;       
+    text-align: justify;  
+    line-height: 1.6;  
+    font-size: 25px;
+    background: linear-gradient(90deg, grey 0%, whitesmoke 25%, grey 50%, whitesmoke 75%, grey 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    
+}
+
+/*****************SECCION3***************/
+.seccion3{
+    margin-top: 80px;
+}
+
+.container-habilidades{
+    display: grid;
+    grid-template-columns:auto auto auto ;
+    justify-content: center;
+    gap: 60px;
+    padding: 70px;
+}
+
+.habilidades{
+    border: 1px solid rgb(184, 184, 184);
+    border-radius: 20%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s ease;
+}
+
+.habilidades img{
+    position: relative;
+    width: 50px;
+}
+
+.habilidades p{
+    color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.habilidades:hover{
+    transform: scale(1.2);
 }
