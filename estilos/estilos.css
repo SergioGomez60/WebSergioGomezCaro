@@ -109,7 +109,7 @@ body{
     -webkit-text-fill-color: transparent; 
     animation: gradient-flow 5s linear infinite;
     text-align:center;
-    font-size:60px;
+    font-size:40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -169,3 +169,59 @@ body{
 }
 
 /***************SECCION4**************/
+.div-educacion{
+    width: 50%;
+    margin: 0 auto;
+    padding: 80px;
+}
+
+.estudios{
+    border-bottom: 1px solid whitesmoke;
+    padding: 10px;
+    color: aliceblue;
+}
+
+.titulo-educacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.titulacion{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(90deg, grey 0%, whitesmoke 25%, grey 50%, whitesmoke 75%, grey 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+.contenido-educacion{
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.1s ease;
+    color: rgb(201, 201, 201);
+    font-size: 17px;
+}
+
+.estudios.active .contenido-educacion{
+    max-height: 200px; 
+    padding: 10px;
+}
+
+.flecha{
+    transition: transform 0.1s;
+    width: 15px;
+}
+
+.estudios.active .flecha {
+    transform: rotate(180deg);
+}
+
+.icono-graduacion{
+    width: 60px;
+}
