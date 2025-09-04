@@ -139,12 +139,12 @@ body{
     display: grid;
     grid-template-columns:auto auto auto ;
     justify-content: center;
-    gap: 60px;
+    gap: 100px;
     padding: 70px;
 }
 
 .habilidades{
-    border: 1px solid rgb(184, 184, 184);
+    border: 1px solid rgb(184, 184, 184, 0.1);
     border-radius: 20%;
     padding: 30px;
     display: flex;
@@ -167,3 +167,5 @@ body{
 .habilidades:hover{
     transform: scale(1.2);
 }
+
+/***************SECCION4**************/
