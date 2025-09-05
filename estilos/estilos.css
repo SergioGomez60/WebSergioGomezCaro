@@ -172,7 +172,7 @@ body{
 .div-educacion{
     width: 50%;
     margin: 0 auto;
-    padding: 80px;
+    padding: 60px;
 }
 
 .estudios{
@@ -224,4 +224,20 @@ body{
 
 .icono-graduacion{
     width: 60px;
+}
+
+
+/****************SECCION5*************/
+.proyecto{
+    color:whitesmoke;
+    text-align:center;
+}
+
+.proyectos{
+    display:flex;
+    justify-content:center;
+}
+
+.icono-ordenador{
+    width:50px;
 }
