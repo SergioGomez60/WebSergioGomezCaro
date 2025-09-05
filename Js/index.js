@@ -12,7 +12,7 @@ window.addEventListener("scroll",function(){
 
 
 
-/*****************Educacion**************/
+/*****************EDUCACION**************/
 const educacion = document.querySelectorAll(".titulo-educacion");
 
 educacion.forEach(educacion => {
@@ -20,4 +20,15 @@ educacion.forEach(educacion => {
     const flecha = educacion.parentElement; //Para activar el bloque entero y poder hacer que se despliegue.
     flecha.classList.toggle("active"); //hace que si el elemento no tiene la clase "active", se la añade; y si ya la tiene, se la quita.
   })
+});
+
+
+/******************PROYECTOS**************/
+const proyecto = document.querySelectorAll(".proyecto");
+
+// 1. Selecciona todos los elementos que tengan la clase "proyecto"
+proyecto.forEach(function(div){
+  div.addEventListener("click",function(){
+    window.open(this.dataset.url,"_blank");
+  });
 });

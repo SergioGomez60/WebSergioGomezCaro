@@ -228,16 +228,41 @@ body{
 
 
 /****************SECCION5*************/
-.proyecto{
-    color:whitesmoke;
-    text-align:center;
+.proyectos{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 60px;
+    gap: 50px;
 }
+
+.proyecto{
+    color: rgb(184, 184, 184);
+    text-align: center;
+    border: 2px solid grey;
+    border-radius: 10px;
+    padding: 20px;
+    background: linear-gradient(50deg, grey 0%, rgb(49, 25, 25) 100%);
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    width: 400px;
+    transition: 0.3s;
+    scale: 1;
+}
+
+.proyecto:hover{
+    box-shadow: 0 0 12px grey;
+    transition: 0.3s;
+    cursor: pointer;
+    scale: 1.1;
+}
+
 
 .proyectos{
     display:flex;
     justify-content:center;
 }
 
-.icono-ordenador{
-    width:50px;
+.icono-proyectos{
+    width:80px;
 }
