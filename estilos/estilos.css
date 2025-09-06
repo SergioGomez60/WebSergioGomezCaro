@@ -266,3 +266,21 @@ body{
 .icono-proyectos{
     width:80px;
 }
+
+/**************SECCION6**************/
+.iconos-redes{
+    width:30px;
+}
+
+.container-redes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    padding:60px
+}
+
+.redes{
+    color:white;
+    display:flex;
+    align-items:center;
+}
