@@ -269,7 +269,7 @@ body{
 
 /**************SECCION6**************/
 .iconos-redes{
-    width:30px;
+    width:20px;
 }
 
 .container-redes{
@@ -279,8 +279,24 @@ body{
     padding:60px
 }
 
-.redes{
+.linkedin{
     color:white;
     display:flex;
     align-items:center;
+    border:1px solid white;
+    padding:10px;
+    gap:13px;
+    font-size:15px;
+    justify-content:center;
+}
+
+.gmail{
+    color:white;
+    display:flex;
+    align-items:center;
+    border:1px solid white;
+    padding:10px;
+    gap:13px;
+    font-size:15px;
+    justify-content:center;
 }
