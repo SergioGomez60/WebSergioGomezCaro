@@ -268,6 +268,20 @@ body{
 }
 
 /**************SECCION6**************/
+.texto-contacto{
+    text-align:center;
+    color:whitesmoke;
+    font-size:25px;
+}
+
+.espacio{
+    margin-top:20px;
+}
+
+.contacto{
+    padding:40px;
+}
+
 .iconos-redes{
     width:20px;
 }
@@ -276,27 +290,41 @@ body{
     display:flex;
     justify-content:center;
     gap:20px;
-    padding:60px
+    padding:20px
 }
 
 .linkedin{
     color:white;
     display:flex;
     align-items:center;
-    border:1px solid white;
+    border:none;
+    border-radius:6px;
     padding:10px;
-    gap:13px;
+    gap:10px;
     font-size:15px;
     justify-content:center;
+    background:rgb(54, 119, 204);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
 .gmail{
     color:white;
     display:flex;
     align-items:center;
-    border:1px solid white;
+    border:none;
     padding:10px;
-    gap:13px;
+    gap:10px;
     font-size:15px;
     justify-content:center;
+    background:rgb(27, 104, 49);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius:6px;
+}
+
+
+/**************FOOTER***********/
+footer{
+    color:whitesmoke;
+    text-align:center;
+    padding:20px;
+    border-top: 1px solid grey;
 }
