@@ -35,6 +35,24 @@ proyecto.forEach(function(div){
 
 
 /****************CONTACTO*************/
-const linkedin = document.querySelectorAll(".linkedin");
-const gmail = document.querySelectorAll(".gmail");
+const contacto = document.querySelectorAll(".contactar");
 
+contacto.forEach(function(div){
+  div.addEventListener("click",function(){
+    window.open(this.dataset.url,"_blank");
+  })
+})
+
+/****************HIDDEN*************/
+const secciones = document.querySelectorAll('.hidden');
+
+const ver = new IntersectionObserver((entradas)=>{
+  entradas.forEach((entrada)=>{
+    if(entrada.isIntersecting){
+      entrada.target.classList.add('show'); // aparece
+    }
+  })
+},{
+  threshold: 0.4 // se activa cuando el 20% de la sección es visible
+});
+secciones.forEach((sec) => ver.observe(sec)); //hace que todas las secciones con clase .hidden sean observadas por el IntersectionObserver

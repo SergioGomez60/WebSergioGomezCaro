@@ -77,7 +77,7 @@ body{
 .texto-nombre{
     /*color: whitesmoke;*/
     text-align: center;
-    font-size: 50px;
+    font-size: 45px;
     background: linear-gradient(90deg, grey 0%, whitesmoke 25%, grey 50%, whitesmoke 75%, grey 100%);
     background-size: 200% 100%;
     -webkit-background-clip: text; 
@@ -118,7 +118,8 @@ body{
     flex-direction: column;
     gap: 40px;
     padding: 20px;
-    max-width: 35%;           
+    max-width: 750px; 
+    min-width:500px ;          
     margin: 0 auto;       
     text-align: justify;  
     line-height: 1.6;  
@@ -270,7 +271,6 @@ body{
 /**************SECCION6**************/
 .texto-contacto{
     text-align:center;
-    color:whitesmoke;
     font-size:25px;
 }
 
@@ -282,13 +282,22 @@ body{
     padding:40px;
     border:1px solid rgb(93, 93, 93);
     border-radius:8px;
-    width:50%;
+    max-width:600px;
+    min-width:500px;
     margin:0 auto;
     margin-top:60px;
     margin-bottom:60px;
     display:flex;
     flex-direction:column;
     gap:20px;
+    box-shadow:0 0 12px grey;
+}
+
+.contacto{
+    background: linear-gradient(90deg, grey 0%, whitesmoke 25%, grey 50%, whitesmoke 75%, grey 100%);
+    background-size: 200% 100%;
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
 }
 
 .iconos-redes{
@@ -311,7 +320,7 @@ body{
     gap:10px;
     font-size:15px;
     justify-content:center;
-    background:rgb(54, 119, 204);
+    background:rgb(54, 119, 204,0.6);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     scale:1;
     cursor:pointer;
@@ -325,7 +334,7 @@ body{
     gap:10px;
     font-size:15px;
     justify-content:center;
-    background:rgb(27, 104, 49);
+    background:rgb(27, 105, 49,0.6);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius:6px;
     scale:1;
@@ -344,4 +353,17 @@ footer{
     text-align:center;
     padding:20px;
     border-top: 1px solid grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/******************HIDDEN***************/
+.hidden{
+    opacity: 0;
+    transform: translateY(100px);
+    transition: all 0.8s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
 }
