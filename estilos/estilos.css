@@ -278,8 +278,17 @@ body{
     margin-top:20px;
 }
 
-.contacto{
+.container-contacto{
     padding:40px;
+    border:1px solid rgb(93, 93, 93);
+    border-radius:8px;
+    width:50%;
+    margin:0 auto;
+    margin-top:60px;
+    margin-bottom:60px;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
 
 .iconos-redes{
@@ -290,7 +299,6 @@ body{
     display:flex;
     justify-content:center;
     gap:20px;
-    padding:20px
 }
 
 .linkedin{
@@ -305,6 +313,8 @@ body{
     justify-content:center;
     background:rgb(54, 119, 204);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scale:1;
+    cursor:pointer;
 }
 .gmail{
     color:white;
@@ -318,6 +328,13 @@ body{
     background:rgb(27, 104, 49);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border-radius:6px;
+    scale:1;
+    cursor:pointer;
+}
+
+.linkedin:hover,.gmail:hover{
+    scale:1.1;
+    transition:0.3s;
 }
 
 

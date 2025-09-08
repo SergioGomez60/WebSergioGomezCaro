@@ -32,3 +32,9 @@ proyecto.forEach(function(div){
     window.open(this.dataset.url,"_blank");
   });
 });
+
+
+/****************CONTACTO*************/
+const linkedin = document.querySelectorAll(".linkedin");
+const gmail = document.querySelectorAll(".gmail");
+
