@@ -359,7 +359,7 @@ footer{
 /******************HIDDEN***************/
 .hidden{
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateY(50px);
     transition: all 0.8s ease-out;
 }
 
