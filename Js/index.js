@@ -50,6 +50,8 @@ const ver = new IntersectionObserver((entradas)=>{
   entradas.forEach((entrada)=>{
     if(entrada.isIntersecting){
       entrada.target.classList.add('show'); // aparece
+    }else{
+      entrada.target.classList.remove("show"); //Desaparece //entrada.target significa “el elemento sobre el cual se está actuando”
     }
   })
 },{
