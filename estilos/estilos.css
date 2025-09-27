@@ -94,12 +94,16 @@ body{
 
 .seccion1{
     height: 100vh;              
-    display: flex;
-    flex-direction:column;              
+    display: flex;              
     justify-content: center;    
     align-items: center;
     gap:20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.perfil-seccion1{
+    width:400px;
+    
 }
 
 /****************SECCION2***************/
