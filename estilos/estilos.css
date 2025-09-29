@@ -101,8 +101,14 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.textos-seccion1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .perfil-seccion1{
-    width:400px;
+    width:300px;
     
 }
 
@@ -156,6 +162,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     transition: transform 0.3s ease;
 }
