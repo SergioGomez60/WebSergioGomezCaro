@@ -11,6 +11,16 @@ window.addEventListener("scroll",function(){
 })
 
 
+/******************DESCARGAR CV*********************/
+descargaCv = document.getElementById("descargar_cv");
+descargaCv.addEventListener("click",()=>{
+  const link = document.createElement("a");
+  link.href = "./CV/SergioGomezCaro_CV.pdf";
+  link.download = "SergioGomezCaro_CV.pdf"
+  link.click();
+});
+
+
 
 /*****************EDUCACION**************/
 const educacion = document.querySelectorAll(".titulo-educacion");
