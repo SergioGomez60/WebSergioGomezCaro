@@ -68,3 +68,35 @@ const ver = new IntersectionObserver((entradas)=>{
   threshold: 0.4 // se activa cuando el 20% de la sección es visible
 });
 secciones.forEach((sec) => ver.observe(sec)); //hace que todas las secciones con clase .hidden sean observadas por el IntersectionObserver
+
+
+/******************HABILIDADES*****************/
+
+const habilidades = document.querySelectorAll(".habilidades");
+
+habilidades.forEach(hab =>{
+  hab.addEventListener("click",()=>{
+
+    // Buscamos el id destino del data-target
+    const target = hab.dataset.target;
+    const section = document.getElementById(target);
+
+    // Si la sección ya está visible, la ocultamos (toggle)
+    if(section && !section.classList.contains("ocultar")){
+      section.classList.add('ocultar');
+      return; // Detenemos aqui
+    }else{
+      // Ocultamos todas las secciones antes de mostrar la nueva
+      document.querySelectorAll('.mostrar-habilidad').forEach(seccion => {
+      seccion.classList.add('ocultar');
+    })
+
+  }
+
+    // Si existe, la mostramos
+    if(section){
+      section.classList.toggle('ocultar');
+    }
+
+  })
+})

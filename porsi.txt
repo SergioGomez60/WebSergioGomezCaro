@@ -1,0 +1,29 @@
+<section class="seccion3 hidden" id="habilidades">
+            <h2 class="titulos-secciones">Habilidades</h2>
+            <div class="container-habilidades">
+                <div class="habilidades">
+                    <img src="./imagenes/html-5.png" alt="html">
+                    <p>HTML</p>
+                </div>
+                <div class="habilidades">
+                    <img src="./imagenes/css-3.png" alt="css">
+                    <p>CSS</p>
+                </div>
+                <div class="habilidades">
+                    <img src="./imagenes/js.png" alt="javascript">
+                    <p>JavaScript</p>
+                </div>
+                <div class="habilidades">
+                    <img src="./imagenes/php.png" alt="php">
+                    <p>PHP</p>
+                </div>
+                <div class="habilidades">
+                    <img src="./imagenes/base-de-datos.png" alt="mysql">
+                    <p>MySql</p>
+                </div>
+                <div class="habilidades">
+                    <img src="./imagenes/python.png" alt="python">
+                    <p>Python</p>
+                </div>
+            </div>
+        </section>
