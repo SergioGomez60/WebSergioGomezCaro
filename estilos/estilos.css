@@ -14,6 +14,7 @@ body{
     background: linear-gradient(90deg, #000000,#121212,#000000) ;
 }
 
+
 /***************NAV*******************/
 .navegador{
     display: flex;
@@ -310,11 +311,15 @@ body{
     transition: max-height 0.1s ease;
     color: rgb(201, 201, 201);
     font-size: 17px;
+    transform: translateY(0);
+    transition: all ease-in-out 0.4s;
 }
 
-.estudios.active .contenido-educacion{
+.estudios.active .contenido-educacion{ 
     max-height: 200px; 
     padding: 10px;
+    transform: translateY(auto);
+    transition: all ease-out 1.5s;
 }
 
 .flecha{
