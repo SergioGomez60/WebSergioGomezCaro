@@ -76,6 +76,16 @@ const habilidades = document.querySelectorAll(".habilidades");
 
 habilidades.forEach(hab =>{
   hab.addEventListener("click",()=>{
+    // Guardamos si la habilidad clicada ya tiene el borde
+    const yaTieneBorde = hab.classList.contains("borde-habilidad");
+    // Quitamos borde de todas
+    habilidades.forEach(h => h.classList.remove("borde-habilidad"));
+
+    // Si NO lo tenía, se lo ponemos (si sí lo tenía, no hacemos nada)
+    if(!yaTieneBorde){
+      hab.classList.add("borde-habilidad");
+    }
+    
 
     // Buscamos el id destino del data-target
     const target = hab.dataset.target;
@@ -93,10 +103,12 @@ habilidades.forEach(hab =>{
 
   }
 
+
     // Si existe, la mostramos
     if(section){
       section.classList.toggle('ocultar');
     }
+
 
   })
 })

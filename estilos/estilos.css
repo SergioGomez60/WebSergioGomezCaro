@@ -186,6 +186,7 @@ body{
     justify-content: center;
     gap: 10px;
     transition: transform 0.3s ease;
+    transition:0.5s;
 }
 
 .habilidades img{
@@ -266,6 +267,10 @@ body{
 
 .iconos{
     width: 30px;
+}
+
+.borde-habilidad{
+    border:2px solid rgb(109, 25, 25,0.4);
 }
 
 
