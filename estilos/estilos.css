@@ -482,13 +482,36 @@ footer{
 }
 
 
-@media screen and (min-width:700px){
+@media screen and (min-width: 1000px) and (max-width: 1300px){
     .texto-bienvenidos{
         font-size:100px;
     }
 
     .texto-nombre{
         font-size:35px;
+    }
+
+    .texto-programador{
+        font-size:25px;
+    }
+
+    .perfil-seccion1{
+        width:250px;
+    }
+
+    .div-educacion{
+        width:70%;
+    }
+}
+
+
+@media screen and (min-width: 700px) and (max-width: 1000px){
+    .texto-bienvenidos{
+        font-size:90px;
+    }
+
+    .texto-nombre{
+        font-size:32px;
     }
 
     .texto-programador{
@@ -503,3 +526,5 @@ footer{
         width:70%;
     }
 }
+
+
