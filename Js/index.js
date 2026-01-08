@@ -112,3 +112,27 @@ habilidades.forEach(hab =>{
 
   })
 })
+
+
+// Al hacer click en el menu hamburguesa se despliegan los enlaces.
+
+const menu = document.querySelector("#menu-hamburguesa");
+const enlaces = document.querySelector(".div-enlaces");
+const enlace = document.querySelectorAll(".enlaces");
+
+menu.addEventListener("click",()=>{
+  enlaces.classList.toggle("mostrar-enlaces");
+  
+  if (menu.getAttribute("src") === "./imagenes/menu-de-hamburguesas.png") {
+    menu.src = "./imagenes/x.png";
+  } else {
+    menu.src = "./imagenes/menu-de-hamburguesas.png";
+  }
+})
+
+enlace.forEach(enl => {
+  enl.addEventListener("click",() => {
+    enlaces.classList.remove("mostrar-enlaces");
+    menu.src = "./imagenes/menu-de-hamburguesas.png";
+  })
+})
