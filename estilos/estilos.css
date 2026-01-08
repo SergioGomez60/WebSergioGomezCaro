@@ -481,6 +481,10 @@ footer{
   transform: translateY(0);
 }
 
+.menu-hamburguesa{
+        display: none;
+    }
+
 
 @media screen and (min-width: 1000px) and (max-width: 1300px){
     .texto-bienvenidos{
@@ -501,6 +505,10 @@ footer{
 
     .div-educacion{
         width:70%;
+    }
+
+    .menu-hamburguesa{
+        display: none;
     }
 }
 
@@ -525,6 +533,27 @@ footer{
     .div-educacion{
         width:70%;
     }
+    .descargar_cv{
+        width: 150px;
+    }
+
+    .menu-hamburguesa{
+        display: none;
+    }
 }
 
+@media screen and (min-width: 400px) and (max-width: 700px){
+    .div-enlaces{
+        display: none;
+    }
+
+    .menu-hamburguesa{
+        display: flex;
+        width: 60px;
+    }
+
+    .div-logo{
+        width: 300px;
+    }
+}
 
