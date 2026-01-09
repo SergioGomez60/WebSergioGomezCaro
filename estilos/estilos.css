@@ -396,7 +396,7 @@ body{
     border:1px solid rgb(93, 93, 93);
     border-radius:8px;
     max-width:600px;
-    min-width:500px;
+    min-width:200px;
     margin:0 auto;
     margin-top:60px;
     margin-bottom:60px;
@@ -576,7 +576,8 @@ footer{
 
     /* SECCION 1 */
     .seccion1{
-        padding: 20px;
+        padding: 50px;
+        
     }
 
     .texto-bienvenidos{
@@ -592,7 +593,7 @@ footer{
     }
 
     .perfil-seccion1{
-        width: 140px;
+        width: 120px;
     }
 
     .descargar_cv{
@@ -603,6 +604,7 @@ footer{
     /* SECCION 2 */
     .texto-sobremi{
         font-size: 16px;
+        padding: 30px;
     }
 
     /* SECCION 3 */
@@ -610,5 +612,19 @@ footer{
         grid-template-columns: auto auto;
     }
 
+    .habilidades p{
+        font-size: 15px;
+    }
+
+    /* SECCION 4 */
+    .div-educacion{
+        width: 100%;
+    }
+
+    /* SECCION 5 */
+    .container-contacto{
+        width: 450px;
+    }
+    
 }
 
