@@ -610,6 +610,7 @@ footer{
     /* SECCION 3 */
     .container-habilidades{
         grid-template-columns: auto auto;
+        gap: 30px;
     }
 
     .habilidades{
